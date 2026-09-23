@@ -1,6 +1,17 @@
 import { ApartmentUnit, Amenity, PointOfInterest, Testimonial } from '../types';
+import heroApartmentFacade from '../assets/images/hero_apartment_facade_1790202044546.jpg';
+import interiorLiving from '../assets/images/interior_luxury_living_1790202054705.jpg';
+import rooftopPool from '../assets/images/rooftop_infinity_pool_1790202063641.jpg';
+import masterBedroom from '../assets/images/master_suite_bedroom_1790202073038.jpg';
 
 export const OFFICIAL_INTEREST_FORM_URL = 'https://forms.gle/k7LVju6p1hdPSbnx6';
+
+export const IMAGES = {
+  heroFacade: heroApartmentFacade,
+  interiorLiving: interiorLiving,
+  rooftopPool: rooftopPool,
+  masterBedroom: masterBedroom,
+};
 
 export const APARTMENT_UNITS: ApartmentUnit[] = [
   {
@@ -16,7 +27,7 @@ export const APARTMENT_UNITS: ApartmentUnit[] = [
     priceFrom: 890000,
     floor: 'Térreo elevado com vista verde',
     sunOrientation: 'Sol da Manhã',
-    image: '/src/assets/images/interior_luxury_living_1790202054705.jpg',
+    image: interiorLiving,
     features: [
       'Jardim privativo de 32m² com spa deck opcional',
       'Living integrado à varanda gourmet',
@@ -38,7 +49,7 @@ export const APARTMENT_UNITS: ApartmentUnit[] = [
     priceFrom: 1390000,
     floor: 'Do 3º ao 18º pavimento',
     sunOrientation: 'Norte / Poente suave',
-    image: '/src/assets/images/interior_luxury_living_1790202054705.jpg',
+    image: interiorLiving,
     features: [
       'Churrasqueira a carvão e duto individual na varanda gourmet',
       'Piso em porcelanato 120x120cm retificado nas áreas sociais',
@@ -60,7 +71,7 @@ export const APARTMENT_UNITS: ApartmentUnit[] = [
     priceFrom: 2150000,
     floor: 'Do 19º ao 26º pavimento',
     sunOrientation: 'Frente voltada para o Parque',
-    image: '/src/assets/images/master_suite_bedroom_1790202073038.jpg',
+    image: masterBedroom,
     features: [
       'Hall privativo com elevador codificado e biometria',
       'Living panorâmico com 8 metros de caixilho piso-teto',
@@ -82,7 +93,7 @@ export const APARTMENT_UNITS: ApartmentUnit[] = [
     priceFrom: 3680000,
     floor: '27º e 28º pavimentos (Rooftop privativo)',
     sunOrientation: 'Vista 360° panorâmica da cidade',
-    image: '/src/assets/images/rooftop_infinity_pool_1790202063641.jpg',
+    image: rooftopPool,
     features: [
       'Deck privativo com piscina aquecida de borda infinita',
       'Espaço gourmet superior com lareira ecológica ao ar livre',
@@ -99,28 +110,28 @@ export const GALLERY_ITEMS = [
     id: 'facade',
     title: 'Fachada Arquitetônica',
     category: 'Exterior',
-    image: '/src/assets/images/hero_apartment_facade_1790202044546.jpg',
+    image: heroApartmentFacade,
     description: 'Projeto biofílico assinado por estúdio de arquitetura premiado, com brises térmicos e vegetação nativa integrada.'
   },
   {
     id: 'living',
     title: 'Living & Varanda Integrada',
     category: 'Interiores',
-    image: '/src/assets/images/interior_luxury_living_1790202054705.jpg',
+    image: interiorLiving,
     description: 'Esquadrias piso-teto com atenuação acústica e integração fluida entre living, jantar e espaço gourmet.'
   },
   {
     id: 'pool',
     title: 'Rooftop & Piscina Infinita',
     category: 'Lazer',
-    image: '/src/assets/images/rooftop_infinity_pool_1790202063641.jpg',
+    image: rooftopPool,
     description: 'Piscina aquecida a 90 metros de altura com borda infinita debruçada sobre o skyline da cidade.'
   },
   {
     id: 'suite',
     title: 'Suíte Master',
     category: 'Área Íntima',
-    image: '/src/assets/images/master_suite_bedroom_1790202073038.jpg',
+    image: masterBedroom,
     description: 'Conforto e serenidade com painéis de madeira nobre, janela panorâmica e espaço para closet walk-in.'
   }
 ];

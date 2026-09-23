@@ -1,5 +1,6 @@
 import React from 'react';
 import { OFFICIAL_INTEREST_FORM_URL } from '../data/apartments';
+import heroApartmentFacade from '../assets/images/hero_apartment_facade_1790202044546.jpg';
 import { ArrowRight, Compass, ShieldCheck, Sparkles, MapPin } from 'lucide-react';
 
 export const Hero: React.FC = () => {
@@ -8,10 +9,14 @@ export const Hero: React.FC = () => {
       {/* Background Hero Image with measured contrast scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_apartment_facade_1790202044546.jpg"
+          src={heroApartmentFacade}
           alt="Fachada do empreendimento residencial Vitra Jardins"
           className="w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-1000"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            // Fallback to public folder path if needed
+            (e.target as HTMLImageElement).src = '/images/hero_apartment_facade.jpg';
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-stone-950/40" />
       </div>
