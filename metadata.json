@@ -1,0 +1,6 @@
+{
+  "name": "Vitra Jardins | Venda de Apartamentos de Alto Padrão",
+  "description": "Conheça o Vitra Jardins: apartamentos exclusivos de 2 a 4 suítes com varanda gourmet, lazer completo e localização nobre. Preencha seus dados e fale com nossa equipe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
